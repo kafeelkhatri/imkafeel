@@ -1,0 +1,7 @@
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.mycard:hover {
+  background-color: rgb(198, 204, 226);
+}
