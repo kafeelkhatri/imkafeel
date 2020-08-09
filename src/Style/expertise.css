@@ -1,6 +1,9 @@
 h1 {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 20px !important;
+  font-weight: bolder !important;
+}
+.mycard {
+  height: 300px;
 }
 .mycard:hover {
   background-color: rgb(198, 204, 226);

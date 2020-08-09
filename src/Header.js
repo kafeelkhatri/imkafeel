@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Container, Row, Col } from "react-bootstrap";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import Home from "./Home";
 import About from "./About";
 import Resume from "./Resume";
@@ -66,19 +66,6 @@ function Header() {
               <Link
                 className="nav-link"
                 activeClass="active"
-                to="expertise"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Expertise
-              </Link>
-            </li>
-            <li class="nav-item">
-              <Link
-                className="nav-link"
-                activeClass="active"
                 to="resume"
                 spy={true}
                 smooth={true}
@@ -86,6 +73,19 @@ function Header() {
                 duration={500}
               >
                 Resume
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link
+                className="nav-link"
+                activeClass="active"
+                to="expertise"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Expertise
               </Link>
             </li>
           </ul>

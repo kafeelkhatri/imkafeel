@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, Button, Row, Col, Image } from "react-bootstrap";
+import { Card, Row, Col, Image } from "react-bootstrap";
 import about from "./Images/about-us.png";
 import "./Style/about.css";
 
@@ -27,7 +27,7 @@ export default class About extends Component {
                     marginTop: 20,
                   }}
                 >
-                  <h1>About Me</h1>
+                  <h2>About Me</h2>
                   <br />
                   <p>
                     I am Full stack Web Developer having great skills at Front

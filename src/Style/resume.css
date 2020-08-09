@@ -1,0 +1,22 @@
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff !important;
+  background-color: #dc3545 !important;
+}
+.mynav-item a {
+  color: #dc3545 !important;
+}
+.headings {
+  font-size: 35px !important;
+  font-weight: bolder !important;
+  color: #dc3545;
+}
+h4 {
+  font-size: 25px;
+  font-weight: bolder;
+  color: #dc3545;
+}
+.description {
+  color: black !important;
+  font-size: 20px !important;
+}

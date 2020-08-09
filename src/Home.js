@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, Button, Row, Col, Image } from "react-bootstrap";
+import { Card, Row, Col, Image } from "react-bootstrap";
 import main from "./Images/main.jpg";
 import "./Style/home.css";
 export default class Home extends Component {

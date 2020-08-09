@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, Container, Row, Col, Image } from "react-bootstrap";
+import { Card, Row, Col } from "react-bootstrap";
 import wordpress from "./Images/wordpress.png";
 import ux from "./Images/ux.png";
 import website from "./Images/website-design.png";
@@ -32,6 +32,11 @@ export default class Expertise extends Component {
                 />
                 <Card.Body>
                   <h1>Wordpress Development</h1>
+                  <p>
+                    Portfolio and ECommerce Websites on Wordpress with great
+                    user interface and design, SEO implementation and security
+                    measures.
+                  </p>
                 </Card.Body>
               </Card>
             </Col>
@@ -50,6 +55,10 @@ export default class Expertise extends Component {
                 />
                 <Card.Body>
                   <h1>UI/UX Development</h1>
+                  <p>
+                    When it comes to wireframing and UI/UX design then you are
+                    at right place. I can provide you responsive designs.
+                  </p>
                 </Card.Body>
               </Card>
             </Col>
@@ -68,6 +77,10 @@ export default class Expertise extends Component {
                 />
                 <Card.Body>
                   <h1>Website Development</h1>
+                  <p>
+                    I can develop complex websites and portfolio sites for you
+                    using core php and also on laravel framework.
+                  </p>
                 </Card.Body>
               </Card>
             </Col>
