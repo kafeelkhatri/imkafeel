@@ -3,7 +3,7 @@ h1 {
   font-weight: bolder !important;
 }
 .mycard {
-  height: 300px;
+  height: 100%;
 }
 .mycard:hover {
   background-color: rgb(198, 204, 226);

@@ -32,6 +32,7 @@ export default class Expertise extends Component {
                 />
                 <Card.Body>
                   <h1>Wordpress Development</h1>
+                  <hr />
                   <p>
                     Portfolio and ECommerce Websites on Wordpress with great
                     user interface and design, SEO implementation and security
@@ -55,6 +56,7 @@ export default class Expertise extends Component {
                 />
                 <Card.Body>
                   <h1>UI/UX Development</h1>
+                  <hr />
                   <p>
                     When it comes to wireframing and UI/UX design then you are
                     at right place. I can provide you responsive designs.
@@ -77,6 +79,7 @@ export default class Expertise extends Component {
                 />
                 <Card.Body>
                   <h1>Website Development</h1>
+                  <hr />
                   <p>
                     I can develop complex websites and portfolio sites for you
                     using core php and also on laravel framework.

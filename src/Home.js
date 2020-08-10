@@ -1,9 +1,20 @@
 import React, { Component } from "react";
-import { Card, Row, Col, Image } from "react-bootstrap";
+import { Card, Row, Col, Image, Button } from "react-bootstrap";
 import main from "./Images/main.jpg";
 import "./Style/home.css";
+import AOS from 'aos';
+import "aos/dist/aos.css"
 export default class Home extends Component {
+  constructor(props){
+    super(props);
+  }
+  componentDidMount(){
+    AOS.init({
+      duration : 1000
+    })
+  }
   render() {
+
     return (
       <div>
         <div
@@ -22,10 +33,10 @@ export default class Home extends Component {
                     marginTop: 150,
                   }}
                 >
-                  <h1>Hello</h1>
-                  <h4>I AM MUHAMMAD KAFEEL</h4>
-                  <p>Full Stack Web Developer</p>
-                  <div className="social-icons">
+                  <h1 data-aos="fade-down">Hello</h1>
+                  <h4 data-aos="fade-right">I AM MUHAMMAD KAFEEL</h4>
+                  <p data-aos="fade-right">Full Stack Web Developer</p>
+                  <div className="social-icons" data-aos="zoom-in">
                     <a href="https://github.com/kafeelkhatri">
                       <i class="fab fa-github" style={{ color: "black" }}></i>
                     </a>
@@ -41,10 +52,13 @@ export default class Home extends Component {
                         style={{ color: "#0675E7" }}
                       ></i>
                     </a>
+                  
                   </div>
                 </Col>
                 <Col sm={6} lg={6}>
-                  <Image src={main} fluid thumbnail />
+                  
+                  <Image src={main} fluid thumbnail data-aos="fade-in"/>
+                 
                 </Col>
               </Row>
             </Card.Body>
