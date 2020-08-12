@@ -1,13 +1,11 @@
 import React, { Component } from "react";
-import { Card, Row, Col, Image, Button } from "react-bootstrap";
+import { Card, Row, Col, Image } from "react-bootstrap";
 import main from "./Images/main.jpg";
 import "./Style/home.css";
 import AOS from 'aos';
 import "aos/dist/aos.css"
 export default class Home extends Component {
-  constructor(props){
-    super(props);
-  }
+
   componentDidMount(){
     AOS.init({
       duration : 1000
@@ -23,7 +21,7 @@ export default class Home extends Component {
             padding: 40,
           }}
         >
-          <Card style={{ width: "250", backgroundColor: "#c6cce2" }}>
+          <Card style={{ width: "250" }}>
             <Card.Body>
               <Row>
                 <Col

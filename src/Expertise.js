@@ -4,9 +4,20 @@ import wordpress from "./Images/wordpress.png";
 import ux from "./Images/ux.png";
 import website from "./Images/website-design.png";
 import code from "./Images/code.png";
+import cactus from "./dcactus.png";
+import cactech from "./cactech.png";
+import caclift from "./caclift.png";
+import jewellodge from "./jewellodge.png";
 import "./Style/expertise.css";
+import AOS from 'aos';
+import "aos/dist/aos.css"
 
 export default class Expertise extends Component {
+  componentDidMount(){
+    AOS.init({
+      duration : 1000
+    })
+  }
   render() {
     return (
       <div>
@@ -17,20 +28,21 @@ export default class Expertise extends Component {
           }}
         >
           <Row>
-            <Col sm={6} lg={3}>
+            <Col sm={6} lg={3} id="f1_container">
               <Card
                 style={{
                   width: "50",
-                  boxShadow: "5px 5px 10px rgb(198,204,226)",
+                  boxShadow: "5px 5px 10px black",
                 }}
-                className="text-center mycard"
+                className="text-center mycard shadow"
+                id="f1_card"
               >
-                <Card.Img
+                <Card.Img className="front face"
                   variant="top"
                   src={wordpress}
-                  style={{ width: 70, margin: "20px auto" }}
+                  style={{  marginTop: "50px" ,marginLeft:"50px",maxWidth:"150px" }}
                 />
-                <Card.Body>
+                <Card.Body className="back face center">
                   <h1>Wordpress Development</h1>
                   <hr />
                   <p>
@@ -41,20 +53,21 @@ export default class Expertise extends Component {
                 </Card.Body>
               </Card>
             </Col>
-            <Col sm={6} lg={3}>
+            <Col sm={6} lg={3} id="f1_container">
               <Card
                 style={{
                   width: "50",
-                  boxShadow: "5px 5px 10px rgb(198,204,226)",
+                  boxShadow: "5px 5px 10px black",
                 }}
-                className="text-center mycard"
+                className="text-center mycard shadow"
+                id="f1_card"
               >
-                <Card.Img
+                <Card.Img className="front face"
                   variant="top"
                   src={ux}
-                  style={{ width: 70, margin: "20px auto" }}
+                  style={{  marginTop: "50px" ,marginLeft:"50px",maxWidth:"150px" }}
                 />
-                <Card.Body>
+                <Card.Body className="back face center">
                   <h1>UI/UX Development</h1>
                   <hr />
                   <p>
@@ -64,20 +77,21 @@ export default class Expertise extends Component {
                 </Card.Body>
               </Card>
             </Col>
-            <Col sm={6} lg={3}>
+            <Col sm={6} lg={3} id="f1_container">
               <Card
                 style={{
                   width: "50",
-                  boxShadow: "5px 5px 10px rgb(198,204,226)",
+                  boxShadow: "5px 5px 10px black",
                 }}
-                className="text-center mycard"
+                className="text-center mycard shadow"
+                id="f1_card" 
               >
-                <Card.Img
+                <Card.Img className="front face"
                   variant="top"
                   src={website}
-                  style={{ width: 70, margin: "20px auto" }}
+                  style={{  marginTop: "50px" ,marginLeft:"50px",maxWidth:"150px" }}
                 />
-                <Card.Body>
+                <Card.Body className="back face center">
                   <h1>Website Development</h1>
                   <hr />
                   <p>
@@ -87,20 +101,21 @@ export default class Expertise extends Component {
                 </Card.Body>
               </Card>
             </Col>
-            <Col sm={6} lg={3}>
-              <Card
+            <Col sm={6} lg={3} id="f1_container">
+              <Card 
                 style={{
                   width: "50",
-                  boxShadow: "5px 5px 10px rgb(198,204,226)",
+                  boxShadow: "5px 5px 10px black",
                 }}
-                className="text-center mycard"
+                className="text-center mycard shadow"
+                id="f1_card" 
               >
-                <Card.Img
+                <Card.Img className="front face"
                   variant="top"
                   src={code}
-                  style={{ width: 70, margin: "20px auto" }}
+                  style={{  marginTop: "50px" ,marginLeft:"50px",maxWidth:"150px" }}
                 />
-                <Card.Body>
+                <Card.Body className="back face center">
                   <h1>Mangement Systems</h1>
                   <hr />
                   <p>
@@ -110,7 +125,59 @@ export default class Expertise extends Component {
                 </Card.Body>
               </Card>
             </Col>
+           
           </Row>
+
+         
+        </div>
+        <div
+          style={{
+            margin: "0 auto",
+            padding: 40,
+          }}
+        >
+          <Card style={{ width: "250"}}>
+            <Card.Body>
+              <h4>My Work</h4>
+              <Row>
+                <Col sm={6} lg={6}>
+                <div className="containers">
+                <img src={cactus} alt="Avatar" className="image"/>
+                <div className="overlay">
+                  <div className="text">CACTUS</div>
+                </div>
+              </div>
+                </Col>
+                <Col sm={6} lg={6}>
+                <div className="containers">
+                <img src={cactech} alt="Avatar" className="image"/>
+                <div className="overlay">
+                  <div className="text">CACTECH</div>
+                </div>
+              </div>
+                </Col>
+              </Row>
+              <Row>
+                <Col sm={6} lg={6}>
+                <div className="containers">
+                <img src={jewellodge} alt="Avatar" className="image"/>
+                <div className="overlay">
+                  <div className="text">THE JEWELLODGE</div>
+                </div>
+              </div>
+                </Col>
+                <Col sm={6} lg={6}>
+                <div className="containers">
+                <img src={caclift} alt="Avatar" className="image"/>
+                <div className="overlay">
+                  <div className="text">CACLIFT</div>
+                </div>
+              </div>
+                </Col>
+              </Row>
+             
+            </Card.Body>
+          </Card>
         </div>
       </div>
     );

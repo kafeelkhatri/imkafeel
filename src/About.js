@@ -8,7 +8,7 @@ export default class About extends Component {
     return (
       <div>
         <div style={{ margin: "0 auto", padding: 40 }}>
-          <Card style={{ width: "250", backgroundColor: "#c6cce2" }}>
+          <Card style={{ width: "250" }}>
             <Card.Body>
               <Row>
                 <Col sm={6} lg={6}>
