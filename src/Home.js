@@ -2,17 +2,15 @@ import React, { Component } from "react";
 import { Card, Row, Col, Image } from "react-bootstrap";
 import main from "./Images/main.jpg";
 import "./Style/home.css";
-import AOS from 'aos';
-import "aos/dist/aos.css"
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default class Home extends Component {
-
-  componentDidMount(){
+  componentDidMount() {
     AOS.init({
-      duration : 1000
-    })
+      duration: 1000,
+    });
   }
   render() {
-
     return (
       <div>
         <div
@@ -25,6 +23,7 @@ export default class Home extends Component {
             <Card.Body>
               <Row>
                 <Col
+                  className="responsive"
                   sm={6}
                   lg={6}
                   style={{
@@ -50,13 +49,10 @@ export default class Home extends Component {
                         style={{ color: "#0675E7" }}
                       ></i>
                     </a>
-                  
                   </div>
                 </Col>
                 <Col sm={6} lg={6}>
-                  
-                  <Image src={main} fluid thumbnail data-aos="fade-in"/>
-                 
+                  <Image src={main} fluid thumbnail data-aos="fade-in" />
                 </Col>
               </Row>
             </Card.Body>

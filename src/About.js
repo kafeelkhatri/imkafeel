@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Card, Row, Col, Image } from "react-bootstrap";
 import about from "./Images/about-us.png";
+import kafeel from "./Images/Kafeel.png";
 import "./Style/about.css";
 
 export default class About extends Component {
@@ -11,12 +12,15 @@ export default class About extends Component {
           <Card style={{ width: "250" }}>
             <Card.Body>
               <Row>
-                <Col sm={6} lg={6}>
+                <Col
+                  sm={6}
+                  lg={6}
+                  style={{ display: "flex", justifyContent: "center" }}
+                >
                   <Image
-                    src={about}
+                    src={kafeel}
                     style={{
-                      maxWidth: "90%",
-                      height: "auto",
+                      maxWidth: "350px",
                     }}
                   />
                 </Col>

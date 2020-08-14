@@ -7,6 +7,7 @@ import About from "./About";
 import Resume from "./Resume";
 import Expertise from "./Expertise";
 import uploadedFileLink from "./kafeel.pdf";
+import Footer from "./Footer";
 
 function Header() {
   return (
@@ -137,6 +138,9 @@ function Header() {
           </Col>
         </Row>
       </Container>
+      <div style={{ backgroundColor: "#343A40" }} className="fixed-bottom">
+        <Footer />
+      </div>
     </>
   );
 }

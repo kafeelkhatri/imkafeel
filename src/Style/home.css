@@ -18,3 +18,11 @@ p {
   padding-left: 20px;
   font-size: 35px;
 }
+
+@media only screen and (max-width: 768px) {
+  .responsive {
+    margin-top: 0px !important;
+    display: grid;
+    justify-content: center;
+  }
+}

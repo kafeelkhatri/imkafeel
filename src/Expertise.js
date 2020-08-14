@@ -1,16 +1,13 @@
 import React, { Component } from "react";
-import { Card, Row, Col, Badge } from "react-bootstrap";
+import { Card, Row, Col } from "react-bootstrap";
 import wordpress from "./Images/wordpress.png";
 import ux from "./Images/ux.png";
 import website from "./Images/website-design.png";
 import code from "./Images/code.png";
-import cactus from "./dcactus.png";
-import cactech from "./cactech.png";
-import caclift from "./caclift.png";
-import jewellodge from "./jewellodge.png";
 import "./Style/expertise.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Work from "./Work";
 
 export default class Expertise extends Component {
   componentDidMount() {
@@ -43,7 +40,7 @@ export default class Expertise extends Component {
                   src={wordpress}
                   style={{
                     marginTop: "50px",
-                    marginLeft: "50px",
+                    marginLeft: "100px",
                     maxWidth: "150px",
                   }}
                 />
@@ -73,7 +70,7 @@ export default class Expertise extends Component {
                   src={ux}
                   style={{
                     marginTop: "50px",
-                    marginLeft: "50px",
+                    marginLeft: "100px",
                     maxWidth: "150px",
                   }}
                 />
@@ -102,7 +99,7 @@ export default class Expertise extends Component {
                   src={website}
                   style={{
                     marginTop: "50px",
-                    marginLeft: "50px",
+                    marginLeft: "100px",
                     maxWidth: "150px",
                   }}
                 />
@@ -131,7 +128,7 @@ export default class Expertise extends Component {
                   src={code}
                   style={{
                     marginTop: "50px",
-                    marginLeft: "50px",
+                    marginLeft: "100px",
                     maxWidth: "150px",
                   }}
                 />
@@ -147,193 +144,14 @@ export default class Expertise extends Component {
             </Col>
           </Row>
         </div>
+
         <div
           style={{
             margin: "0 auto",
             padding: 40,
           }}
         >
-          <Card style={{ width: "250" }}>
-            <Card.Body>
-              <h4>My Work</h4>
-              <Row>
-                <Col sm={6} lg={4} className="mycolumn">
-                  <div className="containers">
-                    <img src={cactus} alt="Avatar" className="image" />
-                    <div className="overlay">
-                      <div className="text">
-                        CACTUS <br />
-                        <Row>
-                          <Col sm={12}>
-                            <Badge pill variant="danger">
-                              Wordpress
-                            </Badge>{" "}
-                            <Badge pill variant="danger">
-                              plugins
-                            </Badge>{" "}
-                            <Badge pill variant="danger">
-                              Elementor
-                            </Badge>{" "}
-                          </Col>
-                        </Row>
-                        <Row style={{ marginTop: "25px" }}>
-                          <Col sm={12}>
-                            <a href="http://dcactus.com/">
-                              <button class="button btn btn-danger">
-                                <span>View Project </span>
-                              </button>
-                            </a>
-                          </Col>
-                        </Row>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-                <Col sm={6} lg={4} className="mycolumn">
-                  <div className="containers">
-                    <img src={cactech} alt="Avatar" className="image" />
-                    <div className="overlay">
-                      <div className="text">
-                        CACTECH <br />
-                        <Row>
-                          <Col sm={12}>
-                            <Badge pill variant="danger">
-                              Laravel
-                            </Badge>{" "}
-                            <Badge pill variant="danger">
-                              Bootstrap 4
-                            </Badge>{" "}
-                            <Badge pill variant="danger">
-                              JavaScript
-                            </Badge>{" "}
-                            <Badge pill variant="danger">
-                              jQuery
-                            </Badge>{" "}
-                          </Col>
-                        </Row>
-                        <Row style={{ marginTop: "25px" }}>
-                          <Col sm={12}>
-                            <a href="http://cactech-education.com/">
-                              <button class="button btn btn-danger">
-                                <span>View Project </span>
-                              </button>
-                            </a>
-                          </Col>
-                        </Row>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-                <Col sm={6} lg={4} className="mycolumn">
-                  <div className="containers">
-                    <img src={jewellodge} alt="Avatar" className="image" />
-                    <div className="overlay">
-                      <div className="text">
-                        THE JEWELLODGE <br />
-                        <Row>
-                          <Col sm={12}>
-                            <Badge pill variant="danger">
-                              Wordpress
-                            </Badge>{" "}
-                            <Badge pill variant="danger">
-                              WooCommerce
-                            </Badge>{" "}
-                            <Badge pill variant="danger">
-                              Elementor
-                            </Badge>{" "}
-                            <Badge pill variant="danger">
-                              Plugins
-                            </Badge>{" "}
-                          </Col>
-                        </Row>
-                        <Row style={{ marginTop: "25px" }}>
-                          <Col sm={12}>
-                            <a href="https://thejewellodge.com/">
-                              <button class="button btn btn-danger">
-                                <span>View Project </span>
-                              </button>
-                            </a>
-                          </Col>
-                        </Row>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-              </Row>
-              <Row>
-                <Col sm={6} lg={6} className="mycolumn">
-                  <div className="containers">
-                    <img src={jewellodge} alt="Avatar" className="image" />
-                    <div className="overlay">
-                      <div className="text">
-                        THE JEWELLODGE <br />
-                        <Row>
-                          <Col sm={12}>
-                            <Badge pill variant="danger">
-                              Wordpress
-                            </Badge>{" "}
-                            <Badge pill variant="danger">
-                              WooCommerce
-                            </Badge>{" "}
-                            <Badge pill variant="danger">
-                              Elementor
-                            </Badge>{" "}
-                            <Badge pill variant="danger">
-                              Plugins
-                            </Badge>{" "}
-                          </Col>
-                        </Row>
-                        <Row style={{ marginTop: "25px" }}>
-                          <Col sm={12}>
-                            <a href="https://thejewellodge.com/">
-                              <button class="button btn btn-danger">
-                                <span>View Project </span>
-                              </button>
-                            </a>
-                          </Col>
-                        </Row>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-                <Col sm={6} lg={6} className="mycolumn">
-                  <div className="containers">
-                    <img src={caclift} alt="Avatar" className="image" />
-                    <div className="overlay">
-                      <div className="text">
-                        CACLIFT <br />
-                        <Row>
-                          <Col sm={12}>
-                            <Badge pill variant="danger">
-                              Laravel
-                            </Badge>{" "}
-                            <Badge pill variant="danger">
-                              Bootstrap 4
-                            </Badge>{" "}
-                            <Badge pill variant="danger">
-                              JavaScript
-                            </Badge>{" "}
-                            <Badge pill variant="danger">
-                              jQuery
-                            </Badge>{" "}
-                          </Col>
-                        </Row>
-                        <Row style={{ marginTop: "25px" }}>
-                          <Col sm={12}>
-                            <a href="https://caclift.com/">
-                              <button class="button btn btn-danger">
-                                <span>View Project </span>
-                              </button>
-                            </a>
-                          </Col>
-                        </Row>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-              </Row>
-            </Card.Body>
-          </Card>
+          <Work />
         </div>
       </div>
     );
