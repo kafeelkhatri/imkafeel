@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, Row, Col } from "react-bootstrap";
+import { Card, Row, Col, Badge } from "react-bootstrap";
 import wordpress from "./Images/wordpress.png";
 import ux from "./Images/ux.png";
 import website from "./Images/website-design.png";
@@ -9,14 +9,14 @@ import cactech from "./cactech.png";
 import caclift from "./caclift.png";
 import jewellodge from "./jewellodge.png";
 import "./Style/expertise.css";
-import AOS from 'aos';
-import "aos/dist/aos.css"
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default class Expertise extends Component {
-  componentDidMount(){
+  componentDidMount() {
     AOS.init({
-      duration : 1000
-    })
+      duration: 1000,
+    });
   }
   render() {
     return (
@@ -37,10 +37,15 @@ export default class Expertise extends Component {
                 className="text-center mycard shadow"
                 id="f1_card"
               >
-                <Card.Img className="front face"
+                <Card.Img
+                  className="front face"
                   variant="top"
                   src={wordpress}
-                  style={{  marginTop: "50px" ,marginLeft:"50px",maxWidth:"150px" }}
+                  style={{
+                    marginTop: "50px",
+                    marginLeft: "50px",
+                    maxWidth: "150px",
+                  }}
                 />
                 <Card.Body className="back face center">
                   <h1>Wordpress Development</h1>
@@ -62,10 +67,15 @@ export default class Expertise extends Component {
                 className="text-center mycard shadow"
                 id="f1_card"
               >
-                <Card.Img className="front face"
+                <Card.Img
+                  className="front face"
                   variant="top"
                   src={ux}
-                  style={{  marginTop: "50px" ,marginLeft:"50px",maxWidth:"150px" }}
+                  style={{
+                    marginTop: "50px",
+                    marginLeft: "50px",
+                    maxWidth: "150px",
+                  }}
                 />
                 <Card.Body className="back face center">
                   <h1>UI/UX Development</h1>
@@ -84,12 +94,17 @@ export default class Expertise extends Component {
                   boxShadow: "5px 5px 10px black",
                 }}
                 className="text-center mycard shadow"
-                id="f1_card" 
+                id="f1_card"
               >
-                <Card.Img className="front face"
+                <Card.Img
+                  className="front face"
                   variant="top"
                   src={website}
-                  style={{  marginTop: "50px" ,marginLeft:"50px",maxWidth:"150px" }}
+                  style={{
+                    marginTop: "50px",
+                    marginLeft: "50px",
+                    maxWidth: "150px",
+                  }}
                 />
                 <Card.Body className="back face center">
                   <h1>Website Development</h1>
@@ -102,18 +117,23 @@ export default class Expertise extends Component {
               </Card>
             </Col>
             <Col sm={6} lg={3} id="f1_container">
-              <Card 
+              <Card
                 style={{
                   width: "50",
                   boxShadow: "5px 5px 10px black",
                 }}
                 className="text-center mycard shadow"
-                id="f1_card" 
+                id="f1_card"
               >
-                <Card.Img className="front face"
+                <Card.Img
+                  className="front face"
                   variant="top"
                   src={code}
-                  style={{  marginTop: "50px" ,marginLeft:"50px",maxWidth:"150px" }}
+                  style={{
+                    marginTop: "50px",
+                    marginLeft: "50px",
+                    maxWidth: "150px",
+                  }}
                 />
                 <Card.Body className="back face center">
                   <h1>Mangement Systems</h1>
@@ -125,10 +145,7 @@ export default class Expertise extends Component {
                 </Card.Body>
               </Card>
             </Col>
-           
           </Row>
-
-         
         </div>
         <div
           style={{
@@ -136,46 +153,185 @@ export default class Expertise extends Component {
             padding: 40,
           }}
         >
-          <Card style={{ width: "250"}}>
+          <Card style={{ width: "250" }}>
             <Card.Body>
               <h4>My Work</h4>
               <Row>
-                <Col sm={6} lg={6}>
-                <div className="containers">
-                <img src={cactus} alt="Avatar" className="image"/>
-                <div className="overlay">
-                  <div className="text">CACTUS</div>
-                </div>
-              </div>
+                <Col sm={6} lg={4} className="mycolumn">
+                  <div className="containers">
+                    <img src={cactus} alt="Avatar" className="image" />
+                    <div className="overlay">
+                      <div className="text">
+                        CACTUS <br />
+                        <Row>
+                          <Col sm={12}>
+                            <Badge pill variant="danger">
+                              Wordpress
+                            </Badge>{" "}
+                            <Badge pill variant="danger">
+                              plugins
+                            </Badge>{" "}
+                            <Badge pill variant="danger">
+                              Elementor
+                            </Badge>{" "}
+                          </Col>
+                        </Row>
+                        <Row style={{ marginTop: "25px" }}>
+                          <Col sm={12}>
+                            <a href="http://dcactus.com/">
+                              <button class="button btn btn-danger">
+                                <span>View Project </span>
+                              </button>
+                            </a>
+                          </Col>
+                        </Row>
+                      </div>
+                    </div>
+                  </div>
                 </Col>
-                <Col sm={6} lg={6}>
-                <div className="containers">
-                <img src={cactech} alt="Avatar" className="image"/>
-                <div className="overlay">
-                  <div className="text">CACTECH</div>
-                </div>
-              </div>
+                <Col sm={6} lg={4} className="mycolumn">
+                  <div className="containers">
+                    <img src={cactech} alt="Avatar" className="image" />
+                    <div className="overlay">
+                      <div className="text">
+                        CACTECH <br />
+                        <Row>
+                          <Col sm={12}>
+                            <Badge pill variant="danger">
+                              Laravel
+                            </Badge>{" "}
+                            <Badge pill variant="danger">
+                              Bootstrap 4
+                            </Badge>{" "}
+                            <Badge pill variant="danger">
+                              JavaScript
+                            </Badge>{" "}
+                            <Badge pill variant="danger">
+                              jQuery
+                            </Badge>{" "}
+                          </Col>
+                        </Row>
+                        <Row style={{ marginTop: "25px" }}>
+                          <Col sm={12}>
+                            <a href="http://cactech-education.com/">
+                              <button class="button btn btn-danger">
+                                <span>View Project </span>
+                              </button>
+                            </a>
+                          </Col>
+                        </Row>
+                      </div>
+                    </div>
+                  </div>
+                </Col>
+                <Col sm={6} lg={4} className="mycolumn">
+                  <div className="containers">
+                    <img src={jewellodge} alt="Avatar" className="image" />
+                    <div className="overlay">
+                      <div className="text">
+                        THE JEWELLODGE <br />
+                        <Row>
+                          <Col sm={12}>
+                            <Badge pill variant="danger">
+                              Wordpress
+                            </Badge>{" "}
+                            <Badge pill variant="danger">
+                              WooCommerce
+                            </Badge>{" "}
+                            <Badge pill variant="danger">
+                              Elementor
+                            </Badge>{" "}
+                            <Badge pill variant="danger">
+                              Plugins
+                            </Badge>{" "}
+                          </Col>
+                        </Row>
+                        <Row style={{ marginTop: "25px" }}>
+                          <Col sm={12}>
+                            <a href="https://thejewellodge.com/">
+                              <button class="button btn btn-danger">
+                                <span>View Project </span>
+                              </button>
+                            </a>
+                          </Col>
+                        </Row>
+                      </div>
+                    </div>
+                  </div>
                 </Col>
               </Row>
               <Row>
-                <Col sm={6} lg={6}>
-                <div className="containers">
-                <img src={jewellodge} alt="Avatar" className="image"/>
-                <div className="overlay">
-                  <div className="text">THE JEWELLODGE</div>
-                </div>
-              </div>
+                <Col sm={6} lg={6} className="mycolumn">
+                  <div className="containers">
+                    <img src={jewellodge} alt="Avatar" className="image" />
+                    <div className="overlay">
+                      <div className="text">
+                        THE JEWELLODGE <br />
+                        <Row>
+                          <Col sm={12}>
+                            <Badge pill variant="danger">
+                              Wordpress
+                            </Badge>{" "}
+                            <Badge pill variant="danger">
+                              WooCommerce
+                            </Badge>{" "}
+                            <Badge pill variant="danger">
+                              Elementor
+                            </Badge>{" "}
+                            <Badge pill variant="danger">
+                              Plugins
+                            </Badge>{" "}
+                          </Col>
+                        </Row>
+                        <Row style={{ marginTop: "25px" }}>
+                          <Col sm={12}>
+                            <a href="https://thejewellodge.com/">
+                              <button class="button btn btn-danger">
+                                <span>View Project </span>
+                              </button>
+                            </a>
+                          </Col>
+                        </Row>
+                      </div>
+                    </div>
+                  </div>
                 </Col>
-                <Col sm={6} lg={6}>
-                <div className="containers">
-                <img src={caclift} alt="Avatar" className="image"/>
-                <div className="overlay">
-                  <div className="text">CACLIFT</div>
-                </div>
-              </div>
+                <Col sm={6} lg={6} className="mycolumn">
+                  <div className="containers">
+                    <img src={caclift} alt="Avatar" className="image" />
+                    <div className="overlay">
+                      <div className="text">
+                        CACLIFT <br />
+                        <Row>
+                          <Col sm={12}>
+                            <Badge pill variant="danger">
+                              Laravel
+                            </Badge>{" "}
+                            <Badge pill variant="danger">
+                              Bootstrap 4
+                            </Badge>{" "}
+                            <Badge pill variant="danger">
+                              JavaScript
+                            </Badge>{" "}
+                            <Badge pill variant="danger">
+                              jQuery
+                            </Badge>{" "}
+                          </Col>
+                        </Row>
+                        <Row style={{ marginTop: "25px" }}>
+                          <Col sm={12}>
+                            <a href="https://caclift.com/">
+                              <button class="button btn btn-danger">
+                                <span>View Project </span>
+                              </button>
+                            </a>
+                          </Col>
+                        </Row>
+                      </div>
+                    </div>
+                  </div>
                 </Col>
               </Row>
-             
             </Card.Body>
           </Card>
         </div>

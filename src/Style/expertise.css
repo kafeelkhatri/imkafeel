@@ -7,7 +7,6 @@ h1 {
 }
 .mycard:hover {
   background-color: rgb(198, 204, 226);
-  
 }
 #f1_container {
   position: relative;
@@ -38,7 +37,6 @@ h1 {
 .face.back {
   /* display: block; */
   transform: rotateY(180deg);
-  
 }
 .containers {
   position: relative;
@@ -61,8 +59,8 @@ h1 {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
+  transition: 0.5s ease;
+  background-color: #008cba;
 }
 
 .containers:hover .overlay {
@@ -72,11 +70,45 @@ h1 {
 .text {
   color: white;
   font-size: 20px;
+  font-family: "Poppins";
   position: absolute;
-  top: 15%;
-  left: 15%;
+  top: 50%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  /* text-align: center; */
+  text-align: center;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.mycolumn {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }

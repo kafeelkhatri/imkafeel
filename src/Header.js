@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Container, Row, Col,Button } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-scroll";
 import Home from "./Home";
 import About from "./About";
@@ -39,7 +39,7 @@ function Header() {
           <ul class="navbar-nav mr-auto" style={{ marginLeft: 100 }}>
             <li class="nav-item active">
               <Link
-              style={{ cursor:"pointer" }}
+                style={{ cursor: "pointer" }}
                 className="nav-link"
                 activeClass="active"
                 to="home"
@@ -53,7 +53,7 @@ function Header() {
             </li>
             <li class="nav-item">
               <Link
-              style={{ cursor:"pointer" }}
+                style={{ cursor: "pointer" }}
                 className="nav-link"
                 activeClass="active"
                 to="about"
@@ -67,7 +67,7 @@ function Header() {
             </li>
             <li class="nav-item">
               <Link
-              style={{ cursor:"pointer" }}
+                style={{ cursor: "pointer" }}
                 className="nav-link"
                 activeClass="active"
                 to="resume"
@@ -81,7 +81,7 @@ function Header() {
             </li>
             <li class="nav-item">
               <Link
-              style={{ cursor:"pointer" }}
+                style={{ cursor: "pointer" }}
                 className="nav-link"
                 activeClass="active"
                 to="expertise"
@@ -94,13 +94,17 @@ function Header() {
               </Link>
             </li>
           </ul>
-          <a href={uploadedFileLink} target="_blank" rel="noopener noreferrer" download>
+          <a
+            href={uploadedFileLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+          >
             <Button className="btn btn-outline-danger ml-5">
-                <i className="fas fa-download"/>
-                Download File
+              <i className="fas fa-download mr-2" />
+              Download CV
             </Button>
           </a>
-         
         </div>
       </nav>
       <Container fluid style={{ backgroundColor: "#343A40" }}>
