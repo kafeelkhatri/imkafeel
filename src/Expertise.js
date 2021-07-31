@@ -40,7 +40,7 @@ export default class Expertise extends Component {
                   src={wordpress}
                   style={{
                     marginTop: "50px",
-                    marginLeft: "100px",
+                    marginLeft: "90px",
                     maxWidth: "150px",
                   }}
                 />
@@ -70,7 +70,7 @@ export default class Expertise extends Component {
                   src={ux}
                   style={{
                     marginTop: "50px",
-                    marginLeft: "100px",
+                    marginLeft: "90px",
                     maxWidth: "150px",
                   }}
                 />
@@ -99,7 +99,7 @@ export default class Expertise extends Component {
                   src={website}
                   style={{
                     marginTop: "50px",
-                    marginLeft: "100px",
+                    marginLeft: "90px",
                     maxWidth: "150px",
                   }}
                 />
@@ -128,7 +128,7 @@ export default class Expertise extends Component {
                   src={code}
                   style={{
                     marginTop: "50px",
-                    marginLeft: "100px",
+                    marginLeft: "90px",
                     maxWidth: "150px",
                   }}
                 />
@@ -151,7 +151,6 @@ export default class Expertise extends Component {
             padding: 40,
           }}
         >
-          <Work />
         </div>
       </div>
     );

@@ -6,6 +6,7 @@ import Home from "./Home";
 import About from "./About";
 import Resume from "./Resume";
 import Expertise from "./Expertise";
+import Work from "./Work";
 import uploadedFileLink from "./kafeel.pdf";
 import Footer from "./Footer";
 
@@ -94,6 +95,20 @@ function Header() {
                 Expertise
               </Link>
             </li>
+            <li class="nav-item">
+              <Link
+                style={{ cursor: "pointer" }}
+                className="nav-link"
+                activeClass="active"
+                to="work"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Work
+              </Link>
+            </li>
           </ul>
           <a
             href={uploadedFileLink}
@@ -134,6 +149,13 @@ function Header() {
           <Col lg={12}>
             <div id="expertise">
               <Expertise />
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col lg={12}>
+            <div id="work">
+              <Work />
             </div>
           </Col>
         </Row>
